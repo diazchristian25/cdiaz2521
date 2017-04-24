@@ -18,7 +18,7 @@ class Locomotor : public RobotPart{
         double max_power_consumed;
     
     public:
-    Locomotor(string _name, int _model_number, double _weight, double _cost, string _description, double _max_power_consumed): RobotPart(_name, _model_number, _weight, _cost, _description), max_power_consumed(_max_power_consumed){}
+    Locomotor(string _name, int _model_number, double _weight, double _cost, string _description, double _max_power_consumed): RobotPart(_name, "locomotor", _model_number, _weight, _cost, _description), max_power_consumed(_max_power_consumed){}
     
     int max_power() const;
     
