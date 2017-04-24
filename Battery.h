@@ -22,7 +22,7 @@ private:
     
 public:
     Battery(string _name, int _model_number, double _weight, double _cost, string _description, double _power_available, double _max_energy)
-    : RobotPart(_name, _model_number, _weight, _cost, _description), power_available(_power_available){};
+    : RobotPart(_name, "battery", _model_number, _weight, _cost, _description), power_available(_power_available){};
     
     double max_energy() const;
     
