@@ -20,7 +20,7 @@ class Arm: public RobotPart
         double max_power_consumed;
     
     public:
-    Arm(string _name, int _model_number, double _weight, double _cost, string _description, double _max_power): RobotPart(_name,_model_number,_weight,_cost, _description), max_power_consumed{_max_power_consumed}{}
+    Arm(string _name, int _model_number, double _weight, double _cost, string _description, double _max_power): RobotPart(_name, "arm", _model_number,_weight,_cost, _description), max_power_consumed{_max_power_consumed}{}
     
     double max_power() const;
     
