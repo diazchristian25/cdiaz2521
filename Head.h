@@ -18,7 +18,7 @@ class Head : public RobotPart{
         double power;
     
     public:
-    Head(string _name, int _model_number, double _weight, double _cost, string _description, double _power): RobotPart(_name, _model_number, _weight, _cost, _description) power(_power){}
+    Head(string _name, int _model_number, double _weight, double _cost, string _description, double _power): RobotPart(_name, "head", _model_number, _weight, _cost, _description) power(_power){}
     
     friend ostream& operator<<(ostream& os, const Head& head);
 };
