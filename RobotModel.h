@@ -7,7 +7,7 @@
 //
 
 #ifndef ROBOTMODEL_H
-#define ROBOTMODEL_H
+#define ROBOTMODEL_H_2017
 
 #include "Arm.h"
 #include "Battery.h"
