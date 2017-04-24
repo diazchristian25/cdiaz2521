@@ -33,7 +33,7 @@ class RobotModel
         Battery& battery3;
     
     public:
-        RobotModel(string _name, int _model_name, double _cost, Torso& _torso, Head& _head, Arm& _arm1, Arm& _arm2, Locomotor& _locomotor, Battery& _battery1, Battery& _battery2, Battery& _battery3): name{_name}, model_number{_model_number}, cost{_cost}, torso{_torso}, head{_head}, arm1{_arm1}, arm2{_arm2}, locomotor{_locomotor}, battery1{_battery1}, battery2{_battery2}, battery3{_battery3}{}
+        RobotModel(string _name, int _model_number, double _cost, Torso& _torso, Head& _head, Arm& _arm1, Arm& _arm2, Locomotor& _locomotor, Battery& _battery1, Battery& _battery2, Battery& _battery3): name{_name}, model_number{_model_number}, cost{_cost}, torso{_torso}, head{_head}, arm1{_arm1}, arm2{_arm2}, locomotor{_locomotor}, battery1{_battery1}, battery2{_battery2}, battery3{_battery3}{}
     
         string _name() const;
         int _model_number() const;
