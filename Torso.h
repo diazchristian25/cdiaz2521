@@ -20,7 +20,7 @@ class Torso : public RobotPart{
         int battery_compartments;
     
     public:
-        Torso(string _name, int _model_number, double _weight, double _cost, string _description, int _battery_compartments): RobotPart(_name, _model_number, _weight, _cost, _description), battery_compartments(_battery_compartments){}
+        Torso(string _name, int _model_number, double _weight, double _cost, string _description, int _battery_compartments): RobotPart(_name, "torso", _model_number, _weight, _cost, _description), battery_compartments(_battery_compartments){}
     
         int max_batteries() const;
     
