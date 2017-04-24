@@ -9,6 +9,7 @@
 #include "Shop.h"
 #include "shop.h"
 #include <iostream>
+#include <iomanip>
 #include <string>
 
 // managing Robot Parts
