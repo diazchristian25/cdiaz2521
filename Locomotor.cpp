@@ -5,7 +5,8 @@
 //  Created by Christian Diaz on 4/3/17.
 //  Copyright © 2017 Christian Diaz. All rights reserved.
 //
-
+#include <iostream>
+#include <iomanip>
 #include "Locomotor.h"
 
 int Locomotor::max_power() const
