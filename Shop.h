@@ -40,7 +40,7 @@ public:
     Shop(string _name) : name{_name}{}
 
     //manage robot parts
-    void create_new_arm(string _name, int _model_number, double _weight, double _cost, int _max_power_consumed, string _description);
+    void create_new_arm(string _name, int _model_number, double _weight, double _cost, double _max_power_consumed, string _description);
     vector<Arm> _arms() const;
     void create_new_head(string _name, int _model_number, double _weight, double _cost, string _description);
     vector<Head> _head() const;
@@ -49,7 +49,7 @@ public:
     void create_new_torso(string _name, int _model_number, double _weight, double _cost, int _battery_compartments, string _description);
     vector<Torso> _torso() const;
     void create_new_locomotor(string _name, int _model_number, double _weight, double _cost, double _max_power_consumed, string _description);
-    vector<Locomotor> locomotor() const;
+    vector<Locomotor> _locomotor() const;
 
     //manage robot model
     void create_new_robot_model(string _name, int _model_number, double _cost, Torso& _torso, Head&, _head, Arm& _arm1, Arm& _arm2, Locomotor& _locomotor, Battery& _battery1, Battery& _battery2, Battery& _battery3);
@@ -63,7 +63,7 @@ public:
 
     //manage new orders
     void create_new_order(int _order_number, string _date, RobotModel& robot_model, Customer& _customer, SalesAssociate& sales_associate);
-    vector<Order> order() const;
+    vector<Order> _order() const;
 
     string _name() const;
     string to_string() const;
