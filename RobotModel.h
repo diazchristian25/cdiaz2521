@@ -27,7 +27,7 @@ class RobotModel
         Head& head;
         Arm& arm1;
         Arm& arm2;
-        Locomotor &locomotor;
+        Locomotor& locomotor;
         Battery& battery1;
         Battery& battery2;
         Battery& battery3;
