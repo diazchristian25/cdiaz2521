@@ -20,7 +20,7 @@ Class Order
         int order_number;
         string date;
         int status;
-        RobotModel robot_model;
+        RobotModel& robot_model;
         Customer& customer;
         SalesAssociate& sales_associate;
 
