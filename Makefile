@@ -9,10 +9,10 @@ debug: CXXFLAGS += -g
 debug: executable
 
 executable: main.o RobotPart.o Head.o Arm.o Locomotor.o Battery.o Torso.o RobotModel.o Customer.o SalesAssociate.o Order.o Shop.o Controller.o
-	$(CXX) $(CXXOPTS) `fltk-config --cxxflags` -o 'rrs' 'main.o' ‘RobotPart.o' ‘Head.o' ‘Arm.o' ‘Locomotor.o' ‘Battery.o' ‘Torso.o' ‘RobotModel.o' ‘Customer.o' ‘SalesAssociate.o’ ‘Order.o' ‘Shop.o' ‘Controller.o' 
+	$(CXX) $(CXXOPTS) `fltk-config --use-forms --use-gl --use-images --ldstaticflags --cxxflags` -o 'rrs' 'main.o' ‘RobotPart.o' ‘Head.o' ‘Arm.o' ‘Locomotor.o' ‘Battery.o' ‘Torso.o' ‘RobotModel.o' ‘Customer.o' ‘SalesAssociate.o’ ‘Order.o' ‘Shop.o' ‘Controller.o' 
 	
 main.o: main.cpp RobotPart.h RobotModel.h Customer.h SalesAssociate.h Order.h Shop.h Controller.h
-	$(CXX) -c `fltk-config --cxxflags` $(CXXOPTS) main.cpp
+	$(CXX) -c `fltk-config --use-forms --use-gl --use-images --ldstaticflags --cxxflags` $(CXXOPTS) main.cpp
 
 RobotPart.o: RobotPart.cpp
 	$(CXX) -c $(CXXOPTS) RobotPart.cpp
@@ -48,7 +48,7 @@ Shop.o: Shop.cpp Shop.h Arm.h Battery.h Head.h Locomotor.h Torso.h RobotModel.h 
 	$(CXX) -c $(CXXOPTS) Shop.cpp
 
 Controller.o: Controller.cpp Controller.h Shop.h Arm.h Battery.h Head.h Locomotor.h Torso.h RobotModel.h Customer.h SalesAssociate.h Order.h
-	$(CXX) -c $(CXXOPTS) `fltk-config --cxxflags` controller.cpp
+	$(CXX) -c $(CXXOPTS) `fltk-config --use-forms --use-gl --use-images --ldstaticflags --cxxflags` controller.cpp
 
 clean:
 	-rm -f *.o
